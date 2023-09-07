@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Henny+Penny&family=Ysabeau+Infant:wght@300&display=swap');
+
+html {
+    overflow-x: hidden;
+}
+
+
+body {
+    font-size: 20px;
+    background: #000000;
+    color: #f72702
+   
+}
+
+li { 
+    list-style-type: none; 
+}
+
+main {
+    width: 1000px;
+    height: 800px;
+    margin-left: 400px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+    max-width: 1000px;
+    
+    
+}
+
+
+
+h1 {
+    font-family: 'Henny Penny', cursive;
+}
+
+
+body::before {
+    content: "";
+    background-image: url(./imagens/bg\ desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+main {
+    background-color:#fefefe0e;
+    padding: 40px 40px 20px 90px;
+    margin: 5px 5px 250px 250px;
+    border-radius: 30px;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+}
+
+.selecao-de-personagens {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    min-height: calc(100vh - 152px);
+    justify-content: center;
+
+
+}
+
+.selecao-de-personagens .lista-de-personagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+
+
+}
+
+.selecao-de-personagens .personagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 585px;
+    gap: 25px;
+    margin-left: -100px;
+
+}
+
+.selecao-de-personagens .personagens .titulo {
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+
+}
+
+.lista-de-personagens .personagem img {
+    width: 100px;
+    height: 100%;
+
+}
+
+.lista-de-personagens .personagem.selecionado:hover {
+    opacity: 5;
+    transform: scale(1.3);
+    transition: 500ms linear; 
+    box-shadow: 0px 0px 25px 5px #f72b02;
+    
+
+}
+
+.personagem-selecionado {
+    text-align: center;
+    max-height: 530px;
+
+}
+
+.personagem-selecionado .personagem-grande {
+    width: 330px;
+    height: 330px;
+    margin-right: -100px;
+    margin-top: -50px;
+}
+
+.personagem-selecionado .nome-personagem {
+
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-left: 100px;
+}
+
+.personagem-selecionado .descricao-personagem {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 420px;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+
+
+footer {
+    margin: 10px;
+}
+
+/* ===== Scrollbar CSS ===== */
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #f72b02;
+    border-radius: 10px;
+    border: 2px solid #000000;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nightmare Before Christmas</title>
+
+<!--Icone Jack-->
+    <link rel="jack icon" type="icon.ico" href="./src/imagens/jack-icon.ico">
+
+   <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Henny+Penny&family=Ysabeau+Infant:wght@300&display=swap" rel="stylesheet">
+
+
+    <!--Arquivos CSS-->
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/responsivo.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="src/imagens/logo.png" alt="Logo Nightmare">
+    </header>
+    <audio autoplay loop>
+        <source src="./src/audio.mp3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+           
+           
+            <ul class="lista-de-personagens">
+                <li class="personagem selecionado" id="jack" data-name="Jack Skellington"
+                    data-description="Jack Esqueleto é o Rei da Abóbora na Cidade do Halloween. Ele é responsável pelas idéias novas e excitantes para as festividades de cada ano no Dia das Bruxas.">
+                    <img src="./src/imagens/card-jack.jpg" alt="Personagem Jack">
+                </li>
+                <li class="personagem" id="sally" data-name="Sally" data-description="Sally, a boneca monstro da criação do Dr. Finkelstein. Seus membros são costurados e eles caem, às vezes. Ela normalmente os costura no lugar novamente. Ela é sempre a voz da razão para Jack, embora ele raramente a escute. Ela é intuitiva e pode dizer quando as coisas que Jack está planejando vão dar errado.
+                ">
+                    <img src="./src/imagens/card-sally.jpg" alt="Personagem Sally">
+                </li>
+                <li class="personagem" id="zero" data-name="Zero"
+                    data-description="Zero é o cão fantasma de Jack Skellington.">
+                    <img src="./src/imagens/card-zero.jpg" alt="Personagem Zero">
+                </li>
+                <li class="personagem" id="dr-finkelstein" data-name="Dr. Finkelstein"
+                    data-description="Dr. Finkelstein é um residente da Cidade do Halloween. Ele é um cientista louco que criou Sally, uma boneca de trapos que se tornou sua assistente. Ele tem problemas para se locomover e usa um capacete que pode acessar seu cérebro. Ele pode ser ranzinza, às vezes e é inicialmente muito ocupado em suas experiências para desenvolver amizades, embora Jack Skellington pareça ter uma relação amigável com ele. Às vezes, ele pode ser gentil, mas isso raramente é visto.">
+                    <img src="./src/imagens/card-dr-finkelstein.jpg" alt="Personagem Dr Finkelstein">
+                </li>
+                <li class="personagem" id="prefeito" data-name="Prefeito" data-description="O Prefeito da Cidade do Halloween, um líder entusiasta que conduz as reuniões de assembléia da cidade. Possui duas faces, contente e triste que se alteram dependendo do seu humor.
+                ">
+                    <img src="./src/imagens/card-prefeito.jpg" alt="Personagem Prefeito">
+                </li>
+                </li>
+                <li class="personagem" id="oogie-boogie" data-name="Oogie-Boogie" data-description="Oogie Boogie, ele é o infame Boogeyman (bicho-papão), retratado como um saco de aniagem cheio de insetos com uma queda por jogos de azar.">
+                    <img src="./src/imagens/card-oogie-boogie.jpg" alt="Personagem Oogie-Boogie">
+                </li>
+                <li class="personagem" id="lock-shock-and-barrel" data-name="Lock, Shock & Barrel"
+                    data-description="Lock, Shock & Barrel são um trio de crianças diabólicas em trajes de Halloween, vestidos de diabo, bruxa e esqueleto respectivamente. São ajudantes do Oogie Boogie.">
+                    <img src="./src/imagens/card-lock-shock-and-barrel.jpg" alt="Personagem Lock-Shock-And-Barrel">
+                <li class="personagem" id="clown" data-name="Clown with the Tear Away Face"
+                    data-description="Clown with the Tear Away Face é um cidadão de Halloween Town que pode arrancar seu rosto, revelando que o interior é oco. Sempre andando de monociclo. Quando ele está com o rosto, sua voz é alta, mas quando ele tira é uma voz profunda e assustadora. Ele pode desaparecer em uma nuvem de fumaça.">
+                    <img src="./src/imagens/card-clown.jpg" alt="Personagem Clown">
+                </li>
+                <li class="personagem" id="papai-noel" data-name="Papai Noel" data-description="Papai Noel ou Papai Cruel, como diria Jack Skellington.">
+                    <img src="./src/imagens/card-papai-noel.jpg" alt="Personagem Papai Noel">
+                </li>
+                
+            </ul>
+        </section>
+        <section class="personagem-selecionado">
+            <img class="personagem-grande" src="./src/imagens/card-jack.png" alt="Personagem Selecionado">
+
+            <div class="informacoes-personagem">
+                <h1 class="nome-personagem" id="nome-personagem">Jack Skellington</h2>
+                <p class="descricao-personagem" id="descricao-personagem">Jack Esqueleto é o Rei da Abóbora na Cidade do Halloween. Ele é responsável pelas idéias novas e excitantes para as festividades de cada ano no Dia das Bruxas.</p>
+            </div>
+
+
+        </section>
+    </main>
+    <script src="./src/index.js"></script>
+    <footer>
+    </footer>
+</body>
+
+</html>
